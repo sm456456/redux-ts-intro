@@ -11,7 +11,7 @@ export const searchRepositories = (term: string) => {
 
         try {
             const { data } = await axios.get(
-                'https://api.npms.io/v2/search?q=react',
+                'http://registry.npmjs.com/-/v1/search?text=<searchstring>&size=20',
                 {
                     params: {
                         text: term,
